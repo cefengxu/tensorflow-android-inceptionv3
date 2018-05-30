@@ -1,7 +1,7 @@
 package com.ringsterz.tensorflow_android;
 
 /**
- * Created by mymacpro on 2017. 7. 4..
+ * Created by xufeng8 on 2017. 7. 4..
  */
 
 import android.graphics.Bitmap;

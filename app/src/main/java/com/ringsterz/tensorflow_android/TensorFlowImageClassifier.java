@@ -152,12 +152,11 @@ public class TensorFlowImageClassifier implements Classifier {
                                 return Float.compare(rhs.getConfidence(), lhs.getConfidence());
                             }
                         });
-//        Log.i("boxx","output.length= "+outputs.length);
+
         for (int i = 0; i < outputs.length; ++i) {
-//            Log.i("boxx","#output["+i+"]= "+outputs[i]);
+
             if (outputs[i] > THRESHOLD) {
-//                Log.i("boxx","output["+i+"] = "+outputs[i]);
-//                Log.i("boxx","labels["+labels.size() +" , "+labels.get(i)+"]");
+
                 pq.add(
                         new Recognition(
                                 "" + i, labels.size() > i ? labels.get(i) : "unknown", outputs[i], null));

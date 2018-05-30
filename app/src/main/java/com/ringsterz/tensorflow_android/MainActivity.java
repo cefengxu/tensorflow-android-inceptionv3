@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-//import com.flurgle.camerakit.CameraListener;
-//import com.flurgle.camerakit.CameraView;
 
 import com.wonderkiln.camerakit.CameraKitError;
 import com.wonderkiln.camerakit.CameraKitEvent;
@@ -28,21 +26,9 @@ import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
 
-/*    private static final int INPUT_SIZE = 224;
-
-    private static final int IMAGE_MEAN = 117;
-    private static final float IMAGE_STD = 1;
-    private static final String INPUT_NAME = "input";
-    private static final String OUTPUT_NAME = "MobilenetV1/Predictions/Reshape_1";
-
-//    private static final String MODEL_FILE = "file:///android_asset/mobilenet_v1_1.0_224_frozen_quantized.pb";
-    private static final String MODEL_FILE = "file:///android_asset/mobilenet_v1_1.0_224_frozen.pb";
-    private static final String LABEL_FILE =
-            "file:///android_asset/imagenet_comp_graph_label_strings.txt";*/
-
 
     /*
-    * tensorflow inception v3 graph
+    * tensorflow inception v3 graph @ lenovo ai lab
     */
     private static final int INPUT_SIZE = 224;
     private static final int IMAGE_MEAN = 117;
@@ -54,20 +40,7 @@ public class MainActivity extends AppCompatActivity {
             "file:///android_asset/imagenet_comp_graph_label_strings.txt";
     
 
-    /*
-    * mobilenet v2 ss160-20180224
-    */
-/*
-    private static final int INPUT_SIZE = 299;
-    private static final int IMAGE_MEAN = 117;
-    private static final float IMAGE_STD = 1;
-    private static final String INPUT_NAME = "images_holder";
-    private static final String OUTPUT_NAME = "logits";
-    private static final String MODEL_FILE = "file:///android_asset/mobilenetv2_SS160_20180424.pb";
-    private static final String LABEL_FILE =
-            "file:///android_asset/class_list_20180424.txt";
-
-*/
+  
 
     private Classifier classifier;
     private Executor executor = Executors.newSingleThreadExecutor();
